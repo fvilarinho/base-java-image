@@ -1,6 +1,6 @@
 FROM ghcr.io/concepting-com-br/base-image:latest
 
-LABEL maintainer="fvilarinho@innovativethinking.com.br"
+LABEL maintainer="fvilarinho@concepting.com.br"
 
 RUN apk update && \
     apk --no-cache add nss \
