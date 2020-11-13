@@ -8,8 +8,8 @@ RUN apk update && \
     apk --no-cache add nss \
                        openjdk8-jre-base       
                        
-COPY src/main/resources/local_policy.jar ${LIB_DIR}/
-COPY src/main/resources/US_export_policy.jar ${LIB_DIR}/
+COPY lib/local_policy.jar ${LIB_DIR}/
+COPY lib/US_export_policy.jar ${LIB_DIR}/
 
 RUN rm -f /usr/lib/jvm/java-1.8-openjdk/jre/lib/security/local_policy.jar && \
     rm -f /usr/lib/jvm/java-1.8-openjdk/jre/lib/security/US_export_policy.jar && \
