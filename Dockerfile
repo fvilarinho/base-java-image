@@ -2,7 +2,7 @@ FROM ghcr.io/concepting-com-br/base-image:1.0.0
 
 LABEL maintainer="fvilarinho@concepting.com.br"
 
-USER root
+USER root 
 
 RUN apk update && \
     apk --no-cache add nss \
