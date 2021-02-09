@@ -12,6 +12,7 @@ RUN apk update && \
                        
 COPY lib/local_policy.jar ${LIB_DIR}/
 COPY lib/US_export_policy.jar ${LIB_DIR}/
+COPY .env ${ETC_DIR}/
 
 RUN rm -f /usr/lib/jvm/default-jvm/jre/lib/security/local_policy.jar && \
     rm -f /usr/lib/jvm/default-jvm/jre/lib/security/US_export_policy.jar && \
