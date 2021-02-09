@@ -4,7 +4,7 @@ Synopsys
 This a JAVA base image to build Docker containers.
 It uses the `ghcr.io/concepting-com-br/base-image` and adds the following:
 
-- `openjdk9-jre-base`
+- `openjdk11-jre-base`
 
 It also modifies the cryptography policies of the JRE to support `AES-256`.
 
