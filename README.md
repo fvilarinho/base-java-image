@@ -12,8 +12,6 @@ It also modifies the cryptography policies of the JRE to support `AES-256`.
 Build status
 ============
 
-The last stable version is 1.0.0
-
 ![CI/CD](https://github.com/concepting-com-br/base-java-image/workflows/Docker/badge.svg)
 
 
@@ -22,9 +20,7 @@ Installation
 
 To use this image, just put the line below in your Dockerfile.
 
-`FROM ghcr.io/concepting-com-br/base-java-image:1.0.0` - To use the last stable version.
-
-`FROM ghcr.io/concepting-com-br/base-java-image:latest` - To use the development version.
+`FROM ghcr.io/concepting-com-br/base-java-image:latest`
 
 
 License
