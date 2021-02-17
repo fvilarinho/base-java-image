@@ -12,7 +12,7 @@ It also modifies the cryptography policies of the JRE to support `AES-256`.
 Build status
 ============
 
-![CI/CD](https://github.com/concepting-com-br/base-java-image/workflows/Docker/badge.svg)
+![CI/CD](https://github.com/concepting-com-br/base-java-image/workflows/CI/CD/badge.svg)
 
 
 How to use
