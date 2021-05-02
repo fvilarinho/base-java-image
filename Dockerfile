@@ -1,4 +1,4 @@
-FROM ghcr.io/concepting-com-br/base-image:1.0.0
+FROM ghcr.io/concepting-com-br/base-image:1.1.0
 
 LABEL maintainer="fvilarinho@concepting.com.br"
 
@@ -12,7 +12,7 @@ RUN apk update && \
                        
 COPY lib/local_policy.jar ${LIB_DIR}/
 COPY lib/US_export_policy.jar ${LIB_DIR}/
-COPY .env ${ETC_DIR}/
+COPY .env ${ETC_DIR}/.release
 
 RUN chown -R user:group ${HOME_DIR} && \
     chmod -R o-rwx ${HOME_DIR} && \
