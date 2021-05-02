@@ -4,14 +4,14 @@ services:
   base-java-image:
     build:
       context: .
-    image: ghcr.io/concepting-com-br/base-java-image:${BUILD_VERSION}
-    container_name: base-java-image
-    hostname: base-java-image
+    image: ghcr.io/concepting-com-br/${BUILD_NAME}:${BUILD_VERSION}
+    container_name: ${BUILD_NAME}
+    hostname: ${BUILD_NAME}
     depends_on:
       - etcd
       
   etcd:
-    image: ghcr.io/concepting-com-br/etcd:1.0.0
+    image: ghcr.io/concepting-com-br/etcd:1.1.0
     container_name: etcd
     hostname: etcd
     ports: 
