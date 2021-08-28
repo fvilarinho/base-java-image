@@ -2,7 +2,7 @@ Synopsys
 ========
 
 This a JAVA base image to build Docker containers.
-It uses the `ghcr.io/concepting-com-br/base-image` and adds the following:
+It uses the `ghcr.io/fvilarinho/base-image` and adds the following:
 
 - `openjd11-jre-base`
 
@@ -12,7 +12,7 @@ It also modifies the cryptography policies of the JRE to support `AES-256`.
 Build status
 ============
 
-![CI/CD](https://github.com/concepting-com-br/base-java-image/workflows/CI/CD/badge.svg)
+![CI/CD](https://github.com/fvilarinho/base-java-image/workflows/CI/CD/badge.svg)
 
 
 How to use
@@ -20,9 +20,9 @@ How to use
 
 Just put the line below in your Dockerfile.
 
-`FROM ghcr.io/concepting-com-br/base-java-image:1.0.0` - To use the last stable version.
+`FROM ghcr.io/fvilarinho/base-java-image:1.1.0` - To use the last stable version.
 
-`FROM ghcr.io/concepting-com-br/base-java-image:latest` - To use the development version.
+`FROM ghcr.io/fvilarinho/base-java-image:latest` - To use the development version.
 
 
 License
