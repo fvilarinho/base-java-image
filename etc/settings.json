@@ -1,12 +1,1 @@
-{
-	"build":{
-		"name": {
-			"description": "Name of the build.",
-			"value": "base-java-image"
-		},
-		"version": {
-			"description": "Version of the build.",
-			"value": "1.1.0"
-		}
-	}
-}
+{}
