@@ -5,10 +5,8 @@ LABEL maintainer="fvilarinho@gmail.com"
 USER root 
 
 RUN apk update && \
-    apk --no-cache \
-        --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
-        add nss \
-            openjdk11-jre       
+    apk --no-cache add nss \
+                       openjdk21-jre
                        
 COPY lib/local_policy.jar ${LIB_DIR}/
 COPY lib/US_export_policy.jar ${LIB_DIR}/
