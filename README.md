@@ -8,7 +8,6 @@ It uses the `ghcr.io/fvilarinho/base-image` and adds the following:
 
 It also modifies the cryptography policies of the JRE to support `AES-256`.
 
-
 How to use
 ==========
 
@@ -18,12 +17,15 @@ Just put the line below in your Dockerfile.
 
 `FROM ghcr.io/fvilarinho/base-java-image:latest` - To use the development version.
 
+Build status
+============
+
+[![CI/CD Pipeline](https://github.com/fvilarinho/base-java-image/actions/workflows/pipeline.yml/badge.svg)](https://github.com/fvilarinho/base-java-image/actions/workflows/pipeline.yml)
 
 License
 =======
 
 This image is licensed under the Apache 2.0. Please read the licence file or check the URL [https://www.apache.org/licenses/LICENSE-2.0.txt](https://www.apache.org/licenses/LICENSE-2.0.txt)
-
 
 Contact
 =======
